@@ -10,18 +10,29 @@
 </footer>
 
 {{ if .IsPage }}
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
     <script type="text/javascript">
     //添加行号
     (function(){
         $("pre code").parent().addClass("line-numbers")
     }())
+     const gitalk = new Gitalk({
+         clientID: 'GitHub Application Client ID',
+         clientSecret: 'GitHub Application Client Secret',
+         repo: 'GitHub repo',
+         owner: 'GitHub repo owner',
+         admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
+         id: location.pathname,      // Ensure uniqueness and length less than 50
+         distractionFreeMode: false  // Facebook-like distraction free mode
+     })
 
-    window.MathJax = {
-        tex2jax: {
-            inlineMath: [ ['$','$'] ],
-            processEscapes: true
-        }
-    };
+     gitalk.render('gitalk-container')
+     /* window.MathJax = { */
+     /* tex2jax: { */
+     /* inlineMath: [ ['$','$'] ], */
+     /* processEscapes: true */
+     /* } */
+     /* }; */
     </script>
     <script type="text/javascript" src="{{ "//cdn.jsdelivr.net/npm/prismjs@1.15.0/prism.min.js" | relURL}}" async="true"></script>
 {{ end }}
