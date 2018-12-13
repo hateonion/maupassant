@@ -16,15 +16,17 @@
     (function(){
         $("pre code").parent().addClass("line-numbers")
     }())
-     const gitalk = new Gitalk({
-         clientID: 'GitHub Application Client ID',
-         clientSecret: 'GitHub Application Client Secret',
-         repo: 'GitHub repo',
-         owner: 'GitHub repo owner',
-         admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
-         id: location.pathname,      // Ensure uniqueness and length less than 50
-         distractionFreeMode: false  // Facebook-like distraction free mode
-     })
+     var gitalk = new Gitalk({
+         clientID: 'a775591a2f67dffee599',
+         clientSecret: '3950251022970bfd230313b6a5ca8d508417dd7e',
+         repo: 'hateonion.me',
+         owner: 'hateonion',
+         // title: '{{ page.title }}',
+         // body: '{{ page.permalink }}\n\n{{ page.title }}',
+         // labels: ['Gitalk'{% if page.tags and page.tags.length %}{% for tag in page.tags %},'{{ tag.name }}'{% endfor %}{% endif %}],
+         admin: ['hateonion'],
+         distractionFreeMode: false
+     });
 
      gitalk.render('gitalk-container')
      /* window.MathJax = { */
