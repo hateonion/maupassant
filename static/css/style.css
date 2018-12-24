@@ -268,13 +268,19 @@ textarea {
 .post-title a, .keyword {
     color:#555;
 }
+
 .post-meta {
     padding:0;
-    margin:9px 0 0;
+    margin-top: 10px;
     color:#999;
     text-align:left;
-    display: inline-block;
+    display: flex;
 }
+
+.post-meta__container {
+    display: flex;
+}
+
 .meta-category a {
     position: relative;
     margin-left: 1.8em;
@@ -361,6 +367,7 @@ textarea {
     line-height: 1.7;
     color:#444;
     padding-top:27px;
+    margin: 0;
 }
 .post-content h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6 {
     color: #ba3925;

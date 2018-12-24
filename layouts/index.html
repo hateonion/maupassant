@@ -16,20 +16,22 @@
                                     <a href="{{ .Permalink }}" title="{{ .Title }}" >{{ .Title }}</a>
                                 </h1>
                             </header>
-                            <date class="post-meta meta-date">
-                                {{ .Date.Year }}年{{ printf "%d" .Date.Month }}月{{ .Date.Day }}日
-                            </date>
-                            {{ with .Params.Categories }}
-                            <div class="post-meta meta-category">
-                                |
-                                {{ range . }}
+                            <div class="post-meta post-meta__container">
+                                <date class="post-meta meta-date">
+                                    {{ .Date.Year }}年{{ printf "%d" .Date.Month }}月{{ .Date.Day }}日
+                                </date>
+                                {{ with .Params.Categories }}
+                                <div class="post-meta meta-category">
+                                    |
+                                    {{ range . }}
                                     <a href="{{ "/categories/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
-                                {{ end }}
+                                    {{ end }}
+                                </div>
                             </div>
                             {{ end }}
-                            <div class="post-content">
+                            <p class="post-content">
                                 {{ .Description }}
-                            </div>
+                            </p>
                             <p class="readmore"><a href="{{ .Permalink }}">阅读全文</a></p>
                         </article>
                     {{ end }}

@@ -12,15 +12,17 @@
                         <header>
                             <h1 class="post-title">{{ .Title }}</h1>
                         </header>
-                        <date class="post-meta meta-date">
-                            {{ .Date.Year }}年{{ printf "%d" .Date.Month }}月{{ .Date.Day }}日
-                        </date>
-                        {{ with .Params.Categories }}
-                        <div class="post-meta meta-category">
-                            |
-                            {{ range . }}
+                        <div class="post-meta__container">
+                            <date class="post-meta meta-date">
+                                {{ .Date.Year }}年{{ printf "%d" .Date.Month }}月{{ .Date.Day }}日
+                            </date>
+                            {{ with .Params.Categories }}
+                            <div class="post-meta meta-category">
+                                |
+                                {{ range . }}
                                 <a href="{{ "/categories/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
-                            {{ end }}
+                                {{ end }}
+                            </div>
                         </div>
                         {{ end }}
                         {{ if .Site.Params.busuanzi }}
