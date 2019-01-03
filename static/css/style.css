@@ -791,7 +791,6 @@ img.alignright {
 }
 .post-archive h2 {
       margin: 0;
-      font: bold 25px / 1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif; 
 }
 .post-archive .date {
       padding-right: .7em; 
@@ -811,4 +810,17 @@ img.alignright {
 .readmore a:hover {
     background: #F8F8F8;
     border-bottom-color: #D26911; 
+}
+
+.post-copyright {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    line-height: 35px;
+    font-size: 18px;
+}
+
+.post-copyright a {
+    border-bottom: 1px solid;
 }
