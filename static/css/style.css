@@ -384,9 +384,6 @@ textarea {
 
 .post-content p code, .comment-content p code {
     display:inline;
-    margin:0 5px;
-    padding:3px 5px;
-    border: 1px solid #ddd;
 }
 .post-content p {
     margin:0 0 1.1em;
