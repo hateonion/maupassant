@@ -1,0 +1,15 @@
+<div class="post-meta post-meta__container">
+    <date class="post-meta meta-date">
+        <span class="icon-calendar meta-icon"></span>
+        {{ .Date.Year }}年{{ printf "%d" .Date.Month }}月{{ .Date.Day }}日
+    </date>
+    {{ with .Params.Categories }}
+    <div class="post-meta">
+        |
+        {{ range . }}
+        <span class="icon-folder meta-icon"></span>
+        <a href="{{ "/categories/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

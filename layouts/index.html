@@ -16,21 +16,7 @@
                                     <a href="{{ .Permalink }}" title="{{ .Title }}" >{{ .Title }}</a>
                                 </h1>
                             </header>
-                            <div class="post-meta post-meta__container">
-                                <date class="post-meta meta-date">
-                                    <span class="icon-calendar meta-icon"></span>
-                                    {{ .Date.Year }}年{{ printf "%d" .Date.Month }}月{{ .Date.Day }}日
-                                </date>
-                                {{ with .Params.Categories }}
-                                <div class="post-meta">
-                                    |
-                                    {{ range . }}
-                                    <span class="icon-folder meta-icon"></span>
-                                    <a href="{{ "/categories/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
-                                    {{ end }}
-                                </div>
-                            </div>
-                            {{ end }}
+                            {{ partial "meta_head" . }}
                             <p class="post-content">
                                 {{ .Description }}
                             </p>
