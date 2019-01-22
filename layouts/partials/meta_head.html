@@ -1,8 +1,5 @@
 <div class="post-meta post-meta__container">
-    <date class="post-meta meta-date">
-        <span class="icon-calendar meta-icon"></span>
-        {{ .Date.Year }}年{{ printf "%d" .Date.Month }}月{{ .Date.Day }}日
-    </date>
+    {{ partial "post_date" . }}
     {{ with .Params.Categories }}
     <div class="post-meta">
         |
