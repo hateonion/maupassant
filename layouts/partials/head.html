@@ -34,12 +34,12 @@
     <meta property="og:url" content="{{ .Permalink }}">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="{{ "//cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" | relURL}}">
     {{ if .IsPage }}
     <link rel="stylesheet" href="{{ "//cdn.jsdelivr.net/npm/prismjs@1.15.0/themes/prism.min.css" | relURL }}">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
     {{ end }}
-    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    <link rel="stylesheet" href="{{ index .Site.Data.manifest "main.css" | printf "css/%s" | relURL }}">
+
     {{ range .AlternativeOutputFormats -}}
         {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
     {{ end -}}

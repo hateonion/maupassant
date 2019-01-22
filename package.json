@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "build": "postcss ./static/css/style.css -o ./static/css/main.css"
+    },
+    "devDependencies": {
+        "cssnano": "^4.1.8",
+        "postcss-cli": "^6.1.1",
+        "postcss-hash": "^1.0.2"
+    }
+}
