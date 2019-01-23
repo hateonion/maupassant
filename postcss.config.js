@@ -8,5 +8,6 @@ module.exports = {
             trim: 20,
             manifest: './data/manifest.json'
         }),
+        require('postcss-import')({})
     ],
 };
