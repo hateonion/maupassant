@@ -411,7 +411,7 @@ textarea{resize:vertical}
 
 .post-content p{margin:0 0 1.1em}
 
-.post-content img{padding:1em 0;margin:auto;display:block}
+.post-content img{margin:auto;display:block}
 
 .post-content ul{overflow:auto;padding:.5em 2.4em;border-radius:3px;margin:1.8em 0}
 
@@ -527,7 +527,7 @@ img.alignright{margin:5px 0 0 15px}
 
 @media print, screen and (max-width:860px){#header{text-align:center}#main{width:100%;margin-right:0}#nav-menu{margin:35px 0 -1px}.res-cons{width:auto;margin-right:0}#secondary{display:none}}
 
-@media print, screen and (max-width:680px){.container{padding:0 20px}.post-title{font-size:22px}.page-navigator{padding:15px 0 0}#footer{padding-top:10px}.page-navigator a{padding:0 6px}.post-content img{padding:.2em 0}.post{padding:12px 0}#nav-menu a{padding:0 15px;line-height:27px;height:27px;font-size:13px}}
+@media print, screen and (max-width:680px){.container{padding:0 20px}.post-title{font-size:22px}.page-navigator{padding:15px 0 0}#footer{padding-top:10px}.page-navigator a{padding:0 6px}.post{padding:12px 0}#nav-menu a{padding:0 15px;line-height:27px;height:27px;font-size:13px}}
 
 @media print, screen and (max-width:500px){.col2{width:140px}.post-meta li.comment-count{display:none}.col1 p{margin-right:160px}.col1{margin-right:-160px}.post-content-pages{font-size:14px}.al_mon_list{margin-left:70px;padding-left:20px}}
 

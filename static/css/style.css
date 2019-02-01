@@ -90,7 +90,7 @@ blockquote {
     line-height: 1.5;
     box-shadow: 3px 3px 0 #eaeaea;
 }
-  
+
 /**
 h1, h2, h3 {
     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -365,7 +365,6 @@ textarea {
     margin:0 0 1.1em;
 }
 .post-content img {
-    padding:1em 0;
     margin: auto;
     display: block;
 }
@@ -499,7 +498,7 @@ textarea.textarea {
 }
 .widget .tagcloud a {
     line-height: 1.5;
-    padding: 5px; 
+    padding: 5px;
 }
 #footer {
     padding:.8em 0 3.6em;
@@ -714,9 +713,6 @@ img.alignright {
     .page-navigator a {
         padding:0 6px;
     }
-    .post-content img {
-        padding:0.2em 0;
-    }
     .post {
         padding:12px 0;
     }
@@ -760,13 +756,13 @@ img.alignright {
 .post-archive {
     font-size: 15px;
     line-height: 2;
-    padding-bottom: .8em; 
+    padding-bottom: .8em;
 }
 .post-archive h2 {
       margin: 0;
 }
 .post-archive .date {
-      padding-right: .7em; 
+      padding-right: .7em;
 }
 /* for archive page ends*/
 
@@ -778,11 +774,11 @@ img.alignright {
     padding: 5px 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    float: right; 
+    float: right;
 }
 .readmore a:hover {
     background: #F8F8F8;
-    border-bottom-color: #D26911; 
+    border-bottom-color: #D26911;
 }
 
 .post-copyright {
