@@ -37,7 +37,8 @@
     {{ if .IsPage }}
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
     {{ end }}
-    <link rel="stylesheet" href="{{ index .Site.Data.manifest "main.css" | printf "css/%s" | relURL }}">
+    {{ $css := resources.Get "css/style.css" | resources.PostCSS | resources.Minify | resources.Fingerprint "md5" }}
+    <link rel="stylesheet" href="{{ $css.Permalink }}">
 
     {{ range .AlternativeOutputFormats -}}
         {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
