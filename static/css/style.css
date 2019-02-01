@@ -6,6 +6,7 @@
  */
 @import "prism.css";
 @import "normalize.css";
+@import "lazy.css";
 
 @font-face {
     font-family: 'icomoon';

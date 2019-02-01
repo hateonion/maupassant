@@ -1,4 +1,8 @@
-{{$original := .Get "src" }}
+{{$originalSrc := .Get "src" }}
+{{$Img := .Page.Resources.GetMatch (.Get "src") }}
+{{$Placeholder := $Img.Resize "32x q20" }}
 <figure>
-  <img src="{{ $original }}"/>
+  <div class="lazy-container" style="padding-bottom:{{ div (mul 100.0 $Img.Height) $Img.Width}}%">
+    <img class="lazy-image" src="{{ $Img.Permalink }}"/>
+  </div>
 </figure>

@@ -1,0 +1,10 @@
+.lazy-container {
+  position: relative;
+}
+
+.lazy-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
