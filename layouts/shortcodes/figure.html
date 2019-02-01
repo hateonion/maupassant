@@ -3,6 +3,6 @@
 {{$Placeholder := $Img.Resize "32x q20" }}
 <figure>
   <div class="lazy-container" style="padding-bottom:{{ div (mul 100.0 $Img.Height) $Img.Width}}%">
-    <img class="lazy-image" src="{{ $Img.Permalink }}"/>
+    <img class="lazy-image" src="{{ $Placeholder.Permalink }}" data-src="{{ $Img.Permalink }}" />
   </div>
 </figure>

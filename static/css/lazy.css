@@ -7,4 +7,10 @@
   left: 0;
   top: 0;
   width: 100%;
+  filter: blur(0rem);
+  transition: filter .5s;
+}
+
+.lazy-image[data-src] {
+  filter: blur(0.3rem);
 }
