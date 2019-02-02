@@ -4,9 +4,10 @@
  * @version 1.3
  * @link http://pickcho.com
  */
-@import "prism.css";
+/* @import "prism.css"; */
 @import "normalize.css";
 @import "lazy.css";
+@import "syntax.css";
 
 @font-face {
     font-family: 'icomoon';
@@ -68,20 +69,7 @@ mark {
     padding: 3px 3px 3px 5px;
     background: #fffdd1;
 }
-pre, code {
-    background:rgba(27,31,35,0.05);
-    font-family:Menlo, Monaco, Consolas, "Lucida Console", "Courier New", monospace;
-    font-size:.92857em;
-}
-pre {
-    margin: 2em 0;
-    overflow:auto;
-    border: 1px solid #ddd;
-    display: block;
-}
-code {
-    display: inline-block;
-}
+
 blockquote {
     display: block;
     margin: 1.1em 0;
@@ -797,4 +785,8 @@ img.alignright {
 
 .meta-icon {
     margin: 0 2px;
+}
+
+.highlight {
+  margin-bottom: 12px;
 }
