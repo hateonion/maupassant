@@ -38,21 +38,13 @@
 }
 body {
     background-color:#FFF;
-    color:#444;
     font-size: 15px;
-    /**
-    font-family:"TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
-    **/
+    color:#444;
     font-family: "PingFangSC-Regular", Helvetica, "Helvetica Neue", "Segoe UI", "Hiragino Sans GB", "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
-    /**-webkit-font-smoothing: antialiased;**/
-    -moz-osx-font-smoothing: grayscale;
 }
 a, button.submit {
     color:#6E7173;
     text-decoration:none;
-    -webkit-transition:all .1s ease-in;
-    -moz-transition:all .1s ease-in;
-    -o-transition:all .1s ease-in;
     transition:all .1s ease-in;
 }
 a:hover, a:active {
@@ -73,17 +65,10 @@ blockquote {
     box-shadow: 3px 3px 0 #eaeaea;
 }
 
-/**
-h1, h2, h3 {
-    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-**/
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], textarea {
     padding:6px;
     border:1px solid #ddd;
     width:100%;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
     box-sizing:border-box;
     outline:none;
 }
@@ -125,9 +110,6 @@ textarea {
     margin:0;
 }
 #logo {
-    /**
-    font:bold 42px/1.12 "Times New Roman", Georgia, Times, sans-serif;
-    **/
     font-size: 37.5px;
     font-weight: bold;
     color:#555;
@@ -219,7 +201,6 @@ textarea {
     margin:0;
     color:#555;
     text-align:left;
-    /**font:bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;**/
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -336,10 +317,6 @@ textarea {
 .post-content h3,.post-content h2{
     margin: 1.4em 0 1.1em;
 }
-/* .post-content pre, .comment-content pre {
-    max-height: 320px;
-} */
-
 .post-content p code, .comment-content p code {
     display:inline;
 }
@@ -531,8 +508,7 @@ img.alignleft {
 img.alignright {
     margin:5px 0 0 15px;
 }
-/* archives page*/
- .al_year {
+.al_year {
     width:60px;
     padding: 10px 0;
 }
@@ -554,7 +530,6 @@ img.alignright {
 .body404{
     height: 100%;
     width: 100%;
-    /*background:#fff url(img/404.jpg) no-repeat center top;*/
     background: #fff;
     background-size: cover;
     margin: 4em 0 6em 0;
@@ -598,10 +573,6 @@ img.alignright {
     line-height: 14px;
     letter-spacing: 1px;
     font-size: 14px;
-    -moz-user-select: -moz-none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
     user-select: none;
 }
 .index404:hover{
@@ -728,11 +699,9 @@ img.alignright {
     width: 100%;
 }
 
-/** Donation block **/
 .hidden {
     display: none;
 }
-/* for archive page starts*/
 .post-archive {
     font-size: 15px;
     line-height: 2;
@@ -744,9 +713,6 @@ img.alignright {
 .post-archive .date {
       padding-right: .7em;
 }
-/* for archive page ends*/
-
-/* read more*/
 .readmore a {
     font-size: 14px;
     color: #444;
