@@ -5,7 +5,7 @@
         |
         {{ range . }}
         <span class="icon-folder meta-icon"></span>
-        <a href="{{ "/categories/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
+        <a href="{{ "/categories/" | absLangURL }}{{ . | urlize }}/">{{ . }}</a>
         {{ end }}
     </div>
 </div>
