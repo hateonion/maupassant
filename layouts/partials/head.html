@@ -6,19 +6,14 @@
     {{ hugo.Generator }}
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
     {{ if .IsHome }}
     <title>{{ .Site.Title }} | {{ .Site.Params.subtitle}}</title>
-    <meta property="og:title" content="{{ .Site.Title }} | {{ .Site.Params.subtitle}}">
-    <meta property="og:type" content="website">
     {{ else if eq .Data.Singular "tag" }}
     <title>标签: {{ .Title }} | {{ .Site.Title }}</title>
     {{ else if eq .Data.Singular "category" }}
     <title>分类: {{ .Title }} | {{ .Site.Title }}</title>
     {{ else }}
     <title>{{ .Title }} | {{ .Site.Title }}</title>
-    <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
-    <meta property="og:type" content="article">
         {{ with .Params.date }}
     <meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05+08:00" }}">
         {{ end }}
@@ -27,8 +22,8 @@
         {{ end }}
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }}">
     <meta name="author" content="{{ .Site.Author.name }}">
-    {{- end }}
-    <meta property="og:url" content="{{ .Permalink }}">
+    {{ end }}
+    {{ partial "og" . }}
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     {{ if .IsPage }}
