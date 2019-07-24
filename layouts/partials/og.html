@@ -4,9 +4,19 @@
   <meta property="og:type" content="website">
   <meta property="og:description" content="{{ .Site.Params.subtitle }}" >
   <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ .Site.BaseURL }}hateoion-like-marshmallow.jpeg">
+  <meta property="twitter:title" content="{{ .Site.Title }} | {{ .Site.Params.subtitle}}">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:description" content="{{ .Site.Params.subtitle }}" >
+  <meta property="twitter:image" content="{{ .Site.BaseURL }}hateoion-like-marshmallow.jpeg">
 {{else}}
   <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
   <meta property="og:type" content="article">
   <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }}" >
   <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ .Site.BaseURL }}hateoion-like-marshmallow.jpeg">
+  <meta property="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }}" >
+  <meta property="twitter:image" content="{{ .Site.BaseURL }}hateoion-like-marshmallow.jpeg">
 {{end}}
