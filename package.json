@@ -3,8 +3,6 @@
         "build": "rm ./static/css/main.*.css && postcss ./static/css/style.css -o ./static/css/main.css"
     },
     "devDependencies": {
-        "js-yaml": "^3.13.1",
-        "lodash": "^4.17.15",
         "postcss-cli": "^6.1.1",
         "postcss-import": "^12.0.1"
     }
